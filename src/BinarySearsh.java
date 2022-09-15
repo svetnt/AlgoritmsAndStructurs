@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// Найти, на какой позиции в массиве array находятся числа из массива key. Если какого-то числа нет, вывести -1
 public class BinarySearsh {
 
     public static void main(String[] args) {
