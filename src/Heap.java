@@ -98,7 +98,7 @@ public class Heap {
         heapArray[index] = bottom;
     }
 
-    private void displaceDown(int index){  // проталкивание элемента вверх
+    private void displaceDown(int index){  // проталкивание элемента вниз
         int largerChild; // индекс большего ребенка
         Node top = heapArray[index]; // сщхраняем корень, пока у узла есть хотя бы один потомок
         while (index<currentAmount/2){    // пока элемент не окажется в самом низу:

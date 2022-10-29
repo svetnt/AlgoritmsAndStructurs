@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class QuickSort {
 
     public static void main(String[] args) {
-        int[] arr = {2, 5, 10, 11, 6, 7, 9, 28};
+        int[] arr = {1, 2, 5, 3, 13, 10};
         new QuickSort().sort(arr, 0, arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
@@ -21,7 +21,7 @@ public class QuickSort {
         int temp = 0;
         int opor = arr[left];
         int j = left;
-        for(int i = left+1; i<right; i++){
+        for(int i = left+1; i<=right; i++){
             if (arr[i]<=opor){
                 j++;
                 temp = arr[i];
