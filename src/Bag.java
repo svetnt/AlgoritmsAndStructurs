@@ -19,7 +19,8 @@ public class Bag {
         System.out.println(new Bag().searchBag(bagSize,itemPrices,itemSizes));
     }
 
-    private int searchBag(int bagSize, int[] itemPrices, int[] itemSizes){
+    private String searchBag(int bagSize, int[] itemPrices, int[] itemSizes){
+        String result = "";
         int n = itemPrices.length;
         int[][] dp = new int[bagSize+1][n+1];
         for (int i = 1; i<=n; i++){
@@ -33,6 +34,17 @@ public class Bag {
                 }
             }
         }
-        return dp[bagSize][n];
+        while (bagSize>0){
+               if (itemSizes[n-1]<=bagSize) {
+                   int prev = dp[bagSize][n - 1];
+                   int curr = dp[bagSize - itemSizes[n - 1]][n - 1] + itemPrices[n - 1];
+                   if (prev < curr) {
+                       result = itemPrices[n - 1] + " " + result;
+                       bagSize -= itemSizes[n-1];
+                   }
+                   n--;
+               }
+        }
+        return result;
     }
 }
