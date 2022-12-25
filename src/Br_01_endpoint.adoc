@@ -36,7 +36,7 @@ https://notion.so/http-qa-games-ru-bad51e16b66b403eb3a734e2ad6f5fa9[]
 Получен ответ 405 Method Not Allowed
 
 === Приложения:
-image:Sc_01.png[]
+image:SportProgr/Sc_01.png[]
 
 
 
