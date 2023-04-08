@@ -35,4 +35,6 @@ public class BinarySearshNew {
         }
     }
 
+    public static class DvaUkazat_Bal {
+    }
 }
